@@ -1,0 +1,131 @@
+$DesaturatedRed: hsl(0, 36%, 70%);
+$Sofred: hsl(0, 93%, 68%);
+$DarkGrayishRed: hsl(0, 6%, 24%);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+.apparel {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: auto;
+  &__container {
+    margin: 0 auto;
+    .hero {
+      
+
+      &__logo {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 30%;
+        height: 20%;
+      }
+      &__image {
+          background: url(../asset/apprarel-landing-page/hero-mobile.jpg) no-repeat;
+          background-size: cover;
+        width: 100vw;
+        height: 300px;
+      }
+
+      &__text {
+        background: url(../asset/apprarel-landing-page/bg-pattern-desktop.svg);
+        background-size: cover;
+        height: 100%;
+
+        padding: 2rem;
+        text-align: center;
+        h1 {
+          letter-spacing: 5px;
+          font-size: 2.5rem;
+        }
+        .one {
+          color: $DesaturatedRed;
+          font-weight: 300;
+        }
+        .two {
+          font-weight: 500;
+        }
+        p {
+          margin-top: 1rem;
+          color: $DesaturatedRed;
+          font-size: 0.8rem;
+          margin-bottom: 1rem;
+        }
+
+        .hero__input {
+          display: flex;
+          align-items: center;
+          border: 1px solid $DesaturatedRed;
+          border-radius: 30px;
+          width: 250px;
+          margin: 0 auto;
+
+          input {
+            background: transparent;
+            width: 250px;
+            border: none;
+            outline: none;
+            color: $DesaturatedRed;
+            padding: 0 0.8rem;
+          }
+          img {
+            color: white;
+            background: $Sofred;
+            padding: 0.6rem 1.3rem;
+            border-radius: 30px;
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .apparel {
+   
+    background: url(../asset/apprarel-landing-page/bg-pattern-desktop.svg);
+    .apparel__container {
+        
+      .hero {
+        .hero__input {
+            margin: 0;
+        }
+        &__text {
+            margin-right: 10rem;
+            text-align: left;
+            margin-left: 5rem;
+            h1 {
+                letter-spacing: 8px;
+                font-size: 3rem;
+              }
+              p {
+                  font-size: 1.1rem;
+              }
+        }
+          &__logo{
+              position:absolute;
+              width: 170px;
+              height: 40px;
+              top: 8%;
+              left: 7%;
+          }
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        &__text{
+            flex: 1 1 20rem;
+        }
+        &__image{
+            background: url(../asset/apprarel-landing-page/hero-desktop.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            flex: 1 1 30rem;
+            object-fit: contain;
+        }
+      }
+    }
+  }
+}

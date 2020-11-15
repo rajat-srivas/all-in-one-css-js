@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 html {
   -webkit-box-sizing: border-box;
@@ -28,6 +29,152 @@ h1, h2, h3, h4, p {
   font-weight: 700;
   font-size: 2rem;
   color: #6d708d;
+}
+
+.apparel {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.apparel__container {
+  margin: 0 auto;
+}
+
+.apparel__container .hero__logo {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  height: 20%;
+}
+
+.apparel__container .hero__image {
+  background: url(../asset/apprarel-landing-page/hero-mobile.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+
+.apparel__container .hero__text {
+  background: url(../asset/apprarel-landing-page/bg-pattern-desktop.svg);
+  background-size: cover;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.apparel__container .hero__text h1 {
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
+
+.apparel__container .hero__text .one {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.apparel__container .hero__text .two {
+  font-weight: 500;
+}
+
+.apparel__container .hero__text p {
+  margin-top: 1rem;
+  color: #ce9797;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.apparel__container .hero__text .hero__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ce9797;
+  border-radius: 30px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.apparel__container .hero__text .hero__input input {
+  background: transparent;
+  width: 250px;
+  border: none;
+  outline: none;
+  color: #ce9797;
+  padding: 0 0.8rem;
+}
+
+.apparel__container .hero__text .hero__input img {
+  color: white;
+  background: #f96262;
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+  .apparel {
+    background: url(../asset/apprarel-landing-page/bg-pattern-desktop.svg);
+  }
+  .apparel .apparel__container .hero {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .apparel .apparel__container .hero .hero__input {
+    margin: 0;
+  }
+  .apparel .apparel__container .hero__text {
+    margin-right: 10rem;
+    text-align: left;
+    margin-left: 5rem;
+  }
+  .apparel .apparel__container .hero__text h1 {
+    letter-spacing: 8px;
+    font-size: 3rem;
+  }
+  .apparel .apparel__container .hero__text p {
+    font-size: 1.1rem;
+  }
+  .apparel .apparel__container .hero__logo {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    top: 8%;
+    left: 7%;
+  }
+  .apparel .apparel__container .hero__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  }
+  .apparel .apparel__container .hero__image {
+    background: url(../asset/apprarel-landing-page/hero-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .pricing {
