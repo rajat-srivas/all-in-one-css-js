@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -19,6 +20,14 @@ h1, h2, h3, h4 {
           margin-inline-start: 0;
   -webkit-margin-end: 0;
           margin-inline-end: 0;
+}
+
+.headings {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #6d708d;
 }
 
 .pricing {
@@ -145,6 +154,150 @@ h1, h2, h3, h4 {
   .pricing__container__grid .card {
     max-width: 400px;
     border-radius: 10px;
+  }
+}
+
+.testimonial {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #b3b5c6;
+  font-size: 1rem;
+}
+
+.testimonial__container {
+  max-width: 1100px;
+  padding: 1rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.testimonial__container__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.testimonial__container__grid .one {
+  background-color: #7541c8;
+}
+
+.testimonial__container__grid .two {
+  background-color: #48556a;
+}
+
+.testimonial__container .five {
+  background-color: #19212e;
+}
+
+.testimonial__container .one .card__primary, .testimonial__container .two .card__primary, .testimonial__container .five .card__primary {
+  color: white;
+}
+
+.testimonial__container .three, .testimonial__container .four {
+  background-color: white;
+}
+
+.testimonial__container .three .card__primary, .testimonial__container .four .card__primary {
+  color: #48556a;
+}
+
+.testimonial__container .card {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.testimonial__container .card__info {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__container .card__info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 1rem;
+}
+
+.testimonial__container .card__info__name .name {
+  font-size: .8rem;
+  color: #aaa;
+}
+
+.testimonial__container .card__info__name .qualification {
+  font-size: .6rem;
+  color: #aaa;
+}
+
+.testimonial__container .card__primary {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.testimonial__container .card__secondary {
+  font-size: .8rem;
+  color: #aaa;
+  opacity: 70%;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 900px) {
+  .testimonial__container__grid {
+    justify-items: center;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "one one five three" "four two two three";
+  }
+  .testimonial__container__grid .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: one;
+  }
+  .testimonial__container__grid .two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: two;
+  }
+  .testimonial__container__grid .three {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: three;
+  }
+  .testimonial__container__grid .four {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: four;
+  }
+  .testimonial__container__grid .five {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: five;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

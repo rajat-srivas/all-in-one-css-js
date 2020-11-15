@@ -1,0 +1,142 @@
+$Moderateviolet: hsl(263, 55%, 52%);
+$Verydarkgrayishblue: hsl(217, 19%, 35%);
+$Verydarkblackishblue: hsl(219, 29%, 14%);
+$Lightgray: hsl(0, 0%, 81%);
+$Lightgrayishblue: hsl(210, 46%, 95%);
+$BackgroundColor: hsl(234, 14%, 74%);
+$name: #aaa;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+.testimonial {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $BackgroundColor;
+    font-size: 1rem;
+    &__container {
+        max-width: 1100px;
+        padding: 1rem;
+        margin: 0 auto;
+        height: 100%;
+
+        &__grid {
+           
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            justify-items: center;
+            margin: 0 auto;
+            margin-top: 3rem;
+            .one {
+                background-color: $Moderateviolet;
+            }
+            .two {
+                background-color: $Verydarkgrayishblue;
+            }
+            }
+            .five {
+                background-color: $Verydarkblackishblue;
+            }
+
+            .one, .two, .five {
+                .card__primary {
+                    color: white;
+                }
+            }
+            
+            .three, .four {
+                .card__primary {
+                    color: $Verydarkgrayishblue ;
+                }
+                background-color: white;
+            }
+           
+
+            .card {
+                &__info {
+                    margin-bottom: 1.2rem;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 1px solid white;
+                        margin-right: 1rem;
+                    }
+
+                    &__name {
+                      .name {
+                          font-size: .8rem;
+                          color: $name;
+                      }
+                      .qualification {
+                          font-size: .6rem;
+                          color: $name;
+                      }
+                    }
+                }
+
+                border-radius: 5px;
+                padding: 1rem;
+               &__primary {
+                   font-size: .9rem;
+                   margin-bottom: 1rem;
+                   font-weight: 700;
+               }
+
+               &__secondary {
+                   font-size: .8rem;
+                   color: $name;
+                   opacity: 70%;
+                   font-weight: 500;
+               }
+            }
+        }
+
+      
+    }
+
+
+@media screen and (min-width : 900px){
+    .testimonial__container__grid{
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "one one five three"
+        "four two two three";
+        .one {
+            grid-area: one;
+        }
+        .two {
+            grid-area: two;
+        }
+        .three {
+            grid-area: three;
+        }
+        .four {
+            grid-area: four;
+        }
+        .five {
+            grid-area: five;
+        }
+    }
+}
+
+// @media screen and (min-width: 500px)
+// {
+//     .testimonial__container__grid{
+//         justify-items: center;
+//         grid-template-columns: 1fr 1fr;
+//     }
+// }
+
+@media screen and (max-width : 900px){
+    .card{
+        max-width: 300px;
+    }
+}
+
