@@ -1,0 +1,117 @@
+$VeryLightGrayishBlue: hsl(240, 78%, 98%);
+$LightGrayishBlue: hsl(234, 14%, 74%);
+$GrayishBlue: hsl(233, 13%, 49%);
+$DarkGrayishBlue: hsl(232, 13%, 33%);
+$LinearGradientTo: hsl(236, 72%, 79%);
+$LinearGradientFrom: hsl(237, 63%, 64%);
+
+.pricing {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../asset/pricing-component/bg-bottom.svg), url(../asset/pricing-component/bg-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right top;
+  background-color: $LightGrayishBlue;
+  font-family: "Montserrat", sans-serif;
+
+  &__container {
+    max-width: 900px;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 100%;
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $GrayishBlue;
+    }
+
+    &__grid {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+      .card {
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        h1 {
+          font-size: 3.5rem;
+        }
+        span {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+
+      .master,
+      .basic {
+        height: 320px;
+        background-color: white;
+        align-self: center;
+        span {
+          color: $DarkGrayishBlue;
+        }
+        a {
+          background-image: linear-gradient(
+            $LinearGradientTo,
+            $LinearGradientFrom
+          );
+        }
+      }
+
+      .basic {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .master {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .proffesional {
+        height: 370px;
+        padding: 2rem 1rem;
+        background-image: linear-gradient(
+          $LinearGradientTo,
+          $LinearGradientFrom
+        );
+        border-radius: 10px;
+        color: white;
+        a {
+          background-color: white;
+          color: $DarkGrayishBlue;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0.6rem 4rem;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 950px)
+{
+    .pricing__container__grid {
+        grid-template-columns: 1fr;
+        grid-gap:1rem;
+        justify-items: center;
+        .card {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+    }
+}

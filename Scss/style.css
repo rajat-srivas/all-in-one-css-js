@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.pricing {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../asset/pricing-component/bg-bottom.svg), url(../asset/pricing-component/bg-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right top;
+  background-color: #b3b5c6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pricing__container {
+  max-width: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.pricing__container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #6d708d;
+}
+
+.pricing__container__grid {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.pricing__container__grid .card {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.pricing__container__grid .card h1 {
+  font-size: 3.5rem;
+}
+
+.pricing__container__grid .card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.pricing__container__grid .master,
+.pricing__container__grid .basic {
+  height: 320px;
+  background-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricing__container__grid .master span,
+.pricing__container__grid .basic span {
+  color: #494c5f;
+}
+
+.pricing__container__grid .master a,
+.pricing__container__grid .basic a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+}
+
+.pricing__container__grid .basic {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pricing__container__grid .master {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pricing__container__grid .proffesional {
+  height: 370px;
+  padding: 2rem 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  border-radius: 10px;
+  color: white;
+}
+
+.pricing__container__grid .proffesional a {
+  background-color: white;
+  color: #494c5f;
+}
+
+.pricing__container__grid a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.6rem 4rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 950px) {
+  .pricing__container__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+  }
+  .pricing__container__grid .card {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
