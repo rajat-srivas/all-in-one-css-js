@@ -78,10 +78,11 @@ h1, h2, h3, h4, p {
 }
 
 .apparel__container .hero__text p {
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #ce9797;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  line-height: 25px;
 }
 
 .apparel__container .hero__text .hero__input {
