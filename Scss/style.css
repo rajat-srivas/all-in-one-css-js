@@ -41,6 +41,16 @@ h1, h2, h3, h4, p {
   margin: 0 auto;
 }
 
+.apparel__container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .apparel__container .hero__logo {
   padding: 1rem;
   margin-bottom: 1rem;
