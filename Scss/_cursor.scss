@@ -45,3 +45,10 @@
     pointer-events: none;
     mix-blend-mode: difference;
 }
+
+@media screen and (max-width: 950px)
+{ 
+    .cursor{
+        display: none;
+    }
+}
