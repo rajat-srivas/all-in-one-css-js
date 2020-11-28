@@ -12,6 +12,7 @@ $DarkGrayishRed: hsl(0, 6%, 24%);
     .hero {
       display: flex;
       flex-direction: column;
+      position: relative;
 
       &__logo {
         padding: 1rem;
