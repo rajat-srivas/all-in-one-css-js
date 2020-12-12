@@ -1,188 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS All in One</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-    <link rel="stylesheet" href="Scss/style.css">
-</head>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Scss/style.css" />
+  </head>
 
-<body>
-     <!-- Enlarged cursor on Hover -->
-     <section class="hovercursor">
-        <div class="container__cursor">
-            <ul>
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>Services</li>
-                <li>About</li>
-            </ul>
-            <div class="cursor"></div>
-        </div>
+  <body>
+    
+
+    <!-- Enlarged cursor on Hover -->
+    <section class="hovercursor">
+      <div class="container__cursor">
+        <ul>
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Services</li>
+          <li>About</li>
+        </ul>
+        <div class="cursor"></div>
+      </div>
     </section>
 
     <!-- Apparel Landing Page -->
     <section class="apparel">
-        <div class="apparel__container">
-           <div class="hero">
-               <img src="./asset/apprarel-landing-page/logo.svg" alt="" class="hero__logo">
-               <div class="hero__image"></div>
-               <div class="hero__text">
-                   <h1 class="one">WE'RE</h1>
-                   <h1 class="two">COMING SOON</h1>
-                   <p>We're coming soon Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals. Email Address</p>
-                   <div class="hero__input">
-                    <input type="text" placeholder="Email Address">
-                    <img src="./asset/apprarel-landing-page/icon-arrow.svg" class="arrow" alt="">
-                </div>
-                </div>
-               
-           </div> 
+      <div class="apparel__container">
+        <div class="hero">
+          <img
+            src="./asset/apprarel-landing-page/logo.svg"
+            alt=""
+            class="hero__logo"
+          />
+          <div class="hero__image"></div>
+          <div class="hero__text">
+            <h1 class="one">WE'RE</h1>
+            <h1 class="two">COMING SOON</h1>
+            <p>
+              We're coming soon Hello fellow shoppers! We're currently building
+              our new fashion store. Add your email below to stay up-to-date
+              with announcements and our launch deals. Email Address
+            </p>
+            <div class="hero__input">
+              <input type="text" placeholder="Email Address" />
+              <img
+                src="./asset/apprarel-landing-page/icon-arrow.svg"
+                class="arrow"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Pricing Section Ussing Flex Box and Grid -->
     <section class="pricing">
-        <div class="pricing__container">
-            <h2 class="headings">Our Pricing</h2>
-            <div class="pricing__container__grid">
-                <div class="card basic">
-                    <span>Basic</span>
-                    <h1>$19.99</h1>
-                    <span>500 GB Storage</span>
-                    <span>2 Users Allowed</span>
-                    <span>Send up to 3 GB</span>
-                    <a href="" class="cta">Learn More</a>
-                </div>
-                <div class="card proffesional">
-                    <span>Professional</span>
-                    <h1>$24.99</h1>
-                    <span>1 TB Storage</span>
-                    <span>5 Users Allowed</span>
-                    <span>Send up to 10 GB</span>
-                    <a href="" class="cta">Learn More</a>
-                </div>
-                <div class="card master">
-                    <span>Master</span>
-                    <h1>$39.99</h1>
-                    <span>2 TB Storage</span>
-                    <span>10 Users Allowed</span>
-                    <span>Send up to 20 GB</span>
-                    <a href="" class="cta">Learn More</a>
-                </div>
-            </div>
+      <div class="pricing__container">
+        <h2 class="headings">Our Pricing</h2>
+        <div class="pricing__container__grid">
+          <div class="card basic">
+            <span>Basic</span>
+            <h1>$19.99</h1>
+            <span>500 GB Storage</span>
+            <span>2 Users Allowed</span>
+            <span>Send up to 3 GB</span>
+            <a href="" class="cta">Learn More</a>
+          </div>
+          <div class="card proffesional">
+            <span>Professional</span>
+            <h1>$24.99</h1>
+            <span>1 TB Storage</span>
+            <span>5 Users Allowed</span>
+            <span>Send up to 10 GB</span>
+            <a href="" class="cta">Learn More</a>
+          </div>
+          <div class="card master">
+            <span>Master</span>
+            <h1>$39.99</h1>
+            <span>2 TB Storage</span>
+            <span>10 Users Allowed</span>
+            <span>Send up to 20 GB</span>
+            <a href="" class="cta">Learn More</a>
+          </div>
         </div>
-
+      </div>
     </section>
-<!-- Testimonial section with Flexbox and Grid -->
+    <!-- Testimonial section with Flexbox and Grid -->
 
     <section class="testimonial">
-        <div class="testimonial__container">
-            <h2 class="headings">Testimonials</h2>
-            <div class="testimonial__container__grid">
-                <div class="card one">
-                    <div class="card__info">
-                        <img src="./asset/grid-testimonial/image-daniel.jpg" alt="">
-                        <div class="card__info__name">
-                            <p class="name">Daniel Clifford</p>
-                            <p class="qualification">Verified Graduate</p>
-                        </div>
-                    </div>
-                    <p class="card__primary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rerum alias, illo sequi ducimus itaque?
-                    </p>
-                    <p class="card__secondary">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse quasi aut expedita tempore dignissimos provident possimus explicabo. Beatae iure, obcaecati eligendi doloribus accusantium sed culpa quidem facere! Doloribus maxime cupiditate tenetur corrupti ut tempore in iure consequuntur et atque."
-                    </p>
-                </div>
-
-                <div class="card two">
-                    <div class="card__info">
-                        <img src="./asset/grid-testimonial/image-jeanette.jpg" alt="">
-                        <div class="card__info__name">
-                            <p class="name">Janette Haxmon</p>
-                            <p class="qualification">Verified Graduate</p>
-                        </div>
-                    </div>
-                    <p class="card__primary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rerum alias, illo sequi ducimus itaque?
-                    </p>
-                    <p class="card__secondary">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse quasi aut expedita tempore dignissimos provident possimus explicabo. Beatae iure, obcaecati eligendi doloribus accusantium sed culpa quidem facere! Doloribus maxime cupiditate tenetur corrupti ut tempore in iure consequuntur et atque."
-                    </p>
-                </div>
-
-
-                <div class="card three">
-                    <div class="card__info">
-                        <img src="./asset/grid-testimonial/image-jonathan.jpg" alt="">
-                        <div class="card__info__name">
-                            <p class="name">Jonathan Walters</p>
-                            <p class="qualification">Verified Graduate</p>
-                        </div>
-                    </div>
-                    <p class="card__primary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rerum alias, illo sequi ducimus itaque?
-                    </p>
-                    <p class="card__secondary">
-"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, recusandae minus vel nobis tempora fugiat! Eveniet doloribus obcaecati accusamus quisquam iusto quas molestias temporibus quasi assumenda! Temporibus quaerat iusto ipsum suscipit quibusdam, odio dolores nulla quas quisquam incidunt aperiam quos rerum eligendi ducimus, laborum iure enim, iste delectus facilis perferendis laudantium. Eveniet, explicabo deleniti accusamus illo error totam. Cupiditate minus consectetur eos iure repudiandae quibusdam omnis fugiat dicta ipsam quam magnam, autem odio hic porro aliquid. Reprehenderit a temporibus assumenda, delectus voluptates neque inventore harum. Ipsa, aut. Fugit commodi expedita maiores, consectetur, iste nam hic sed asperiores aliquam, saepe id."
-                    </p>
-                </div>
-
-                <div class="card five">
-                    <div class="card__info">
-                        <img src="./asset/grid-testimonial/image-patrick.jpg" alt="">
-                        <div class="card__info__name">
-                            <p class="name">Patrick Abrams</p>
-                            <p class="qualification">Verified Graduate</p>
-                        </div>
-                    </div>
-                    <p class="card__primary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rerum alias, illo sequi ducimus itaque?
-                    </p>
-                    <p class="card__secondary">
-"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores iste a dolorum, voluptatem sed dolorem maiores voluptates reiciendis praesentium tempore."
-                    </p>
-                </div>
-
-                <div class="card four">
-                    <div class="card__info">
-                        <img src="./asset/grid-testimonial/image-kira.jpg" alt="">
-                        <div class="card__info__name">
-                            <p class="name">Kaira Advani</p>
-                            <p class="qualification">Verified Graduate</p>
-                        </div>
-                    </div>
-                    <p class="card__primary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rerum alias, illo sequi ducimus itaque?
-                    </p>
-                    <p class="card__secondary">
-                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nesciunt velit nihil sit cum repellendus quo? Quod eius nemo molestias."
-                    </p>
-                </div>
-
-
-               
-                
+      <div class="testimonial__container">
+        <h2 class="headings">Testimonials</h2>
+        <div class="testimonial__container__grid">
+          <div class="card one">
+            <div class="card__info">
+              <img src="./asset/grid-testimonial/image-daniel.jpg" alt="" />
+              <div class="card__info__name">
+                <p class="name">Daniel Clifford</p>
+                <p class="qualification">Verified Graduate</p>
+              </div>
             </div>
+            <p class="card__primary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              rerum alias, illo sequi ducimus itaque?
+            </p>
+            <p class="card__secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              esse quasi aut expedita tempore dignissimos provident possimus
+              explicabo. Beatae iure, obcaecati eligendi doloribus accusantium
+              sed culpa quidem facere! Doloribus maxime cupiditate tenetur
+              corrupti ut tempore in iure consequuntur et atque."
+            </p>
+          </div>
+
+          <div class="card two">
+            <div class="card__info">
+              <img src="./asset/grid-testimonial/image-jeanette.jpg" alt="" />
+              <div class="card__info__name">
+                <p class="name">Janette Haxmon</p>
+                <p class="qualification">Verified Graduate</p>
+              </div>
+            </div>
+            <p class="card__primary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              rerum alias, illo sequi ducimus itaque?
+            </p>
+            <p class="card__secondary">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              esse quasi aut expedita tempore dignissimos provident possimus
+              explicabo. Beatae iure, obcaecati eligendi doloribus accusantium
+              sed culpa quidem facere! Doloribus maxime cupiditate tenetur
+              corrupti ut tempore in iure consequuntur et atque."
+            </p>
+          </div>
+
+          <div class="card three">
+            <div class="card__info">
+              <img src="./asset/grid-testimonial/image-jonathan.jpg" alt="" />
+              <div class="card__info__name">
+                <p class="name">Jonathan Walters</p>
+                <p class="qualification">Verified Graduate</p>
+              </div>
+            </div>
+            <p class="card__primary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              rerum alias, illo sequi ducimus itaque?
+            </p>
+            <p class="card__secondary">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis, recusandae minus vel nobis tempora fugiat! Eveniet
+              doloribus obcaecati accusamus quisquam iusto quas molestias
+              temporibus quasi assumenda! Temporibus quaerat iusto ipsum
+              suscipit quibusdam, odio dolores nulla quas quisquam incidunt
+              aperiam quos rerum eligendi ducimus, laborum iure enim, iste
+              delectus facilis perferendis laudantium. Eveniet, explicabo
+              deleniti accusamus illo error totam. Cupiditate minus consectetur
+              eos iure repudiandae quibusdam omnis fugiat dicta ipsam quam
+              magnam, autem odio hic porro aliquid. Reprehenderit a temporibus
+              assumenda, delectus voluptates neque inventore harum. Ipsa, aut.
+              Fugit commodi expedita maiores, consectetur, iste nam hic sed
+              asperiores aliquam, saepe id."
+            </p>
+          </div>
+
+          <div class="card five">
+            <div class="card__info">
+              <img src="./asset/grid-testimonial/image-patrick.jpg" alt="" />
+              <div class="card__info__name">
+                <p class="name">Patrick Abrams</p>
+                <p class="qualification">Verified Graduate</p>
+              </div>
+            </div>
+            <p class="card__primary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              rerum alias, illo sequi ducimus itaque?
+            </p>
+            <p class="card__secondary">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores iste a dolorum, voluptatem sed dolorem maiores
+              voluptates reiciendis praesentium tempore."
+            </p>
+          </div>
+
+          <div class="card four">
+            <div class="card__info">
+              <img src="./asset/grid-testimonial/image-kira.jpg" alt="" />
+              <div class="card__info__name">
+                <p class="name">Kaira Advani</p>
+                <p class="qualification">Verified Graduate</p>
+              </div>
+            </div>
+            <p class="card__primary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              rerum alias, illo sequi ducimus itaque?
+            </p>
+            <p class="card__secondary">
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              nesciunt velit nihil sit cum repellendus quo? Quod eius nemo
+              molestias."
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Fulls screen iamge -->
     <section class="full-image">
-        <div class="img-container">
-            <img src="./asset/fullscreen/p1.png" alt="">
-            <img src="./asset/fullscreen/p2.png" alt="">
-            <img src="./asset/fullscreen/p3.png" alt="">
-            <img src="./asset/fullscreen/p4.png" alt="">
-        </div>
+      <div class="img-container">
+        <img src="./asset/fullscreen/p1.png" alt="" />
+        <img src="./asset/fullscreen/p2.png" alt="" />
+        <img src="./asset/fullscreen/p3.png" alt="" />
+        <img src="./asset/fullscreen/p4.png" alt="" />
+      </div>
     </section>
-   
+
     <!-- Script -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -422,7 +422,7 @@ h1, h2, h3, h4, p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "one one five three" "four two two three";
+        grid-template-areas: "one one five three" "four two two three";
   }
   .testimonial__container__grid .one {
     -ms-grid-row: 1;
@@ -567,6 +567,96 @@ h1, h2, h3, h4, p {
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
+  }
+}
+
+/* These three statement below can be used to style the scrollbar*/
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #23232e;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
+.nav-link i {
+  margin: 0 1.5rem;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 0;
+  }
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+  }
+  .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-item:last-child {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
