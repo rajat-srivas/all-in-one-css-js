@@ -1,0 +1,75 @@
+.wolve {
+  width: 100vw;
+  height: 100vh;
+  background-color: #a0090d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 1000px;
+    height: 600px;
+    background-color: #543e75;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      width: 100%;
+      height: 50vh;
+      width: 80%;
+
+    }
+
+    &__text {
+      h1 {
+        font-family: "Frijole", cursive;
+        font-size: 5rem;
+        color: #e6c022;
+        text-align: center;
+        letter-spacing: 4px;
+        @include breakpoint-down(small) {
+          font-size: 2rem;
+        }
+      }
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #8eaac0;
+        font-family: "Trade Winds", cursive;
+        @include breakpoint-down(small) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__image {
+     
+      @include breakpoint-up(large) {
+        position: absolute;
+        left: 51.5%;
+        top: -10%;
+      }
+      @include breakpoint-down(small) {
+            position: relative;
+            align-self: start;
+            justify-self: flex-start;
+    }
+      img {
+        @include breakpoint-up(large) {
+            width: 134%;
+        height: 110%;
+          }
+          @include breakpoint-down(small) {
+            width: 100%;
+            height: 100%;
+          }
+       
+      }
+    }
+  }
+}

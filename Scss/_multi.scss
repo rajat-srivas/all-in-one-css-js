@@ -1,0 +1,87 @@
+.dropdown{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+
+    header{
+        width: 100%;
+        height: 8vh;
+
+
+        .menu {
+            width: 1200px;
+            padding: 1rem 2rem;
+            margin: 0 auto;
+            .menu__logo {
+                flex: 2;
+                h1 {
+                    font-size: 1rem;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .menu__navbar{
+                flex: 2;
+                justify-self: flex-end;
+            }
+
+           
+        }
+    }
+}
+
+li {
+    position: relative;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sublist {
+    flex-direction: column;
+    display: none;
+    background-color: #1a1a1a;
+    li {
+        margin-bottom: 0.8rem;
+    }
+}
+
+
+
+.courses__parent:hover  .courses__list{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    padding: 1rem;
+    min-width: 200px;
+
+}
+
+.products__parent:hover  .product__list{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 150%;
+    left: 0;
+    padding: 1rem;
+    min-width: 120px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}

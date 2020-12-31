@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 html {
@@ -748,5 +750,218 @@ figure {
           margin-inline-start: 1em;
   -webkit-margin-end: 1em;
           margin-inline-end: 1em;
+}
+
+.dropdown {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dropdown header {
+  width: 100%;
+  height: 8vh;
+}
+
+.dropdown header .menu {
+  width: 1200px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown header .menu .menu__logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.dropdown header .menu .menu__logo h1 {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.dropdown header .menu .menu__navbar {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  justify-self: flex-end;
+}
+
+li {
+  position: relative;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sublist {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  background-color: #1a1a1a;
+}
+
+.sublist li {
+  margin-bottom: 0.8rem;
+}
+
+.courses__parent:hover .courses__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  padding: 1rem;
+  min-width: 200px;
+}
+
+.products__parent:hover .product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 150%;
+  left: 0;
+  padding: 1rem;
+  min-width: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.wolve {
+  width: 100vw;
+  height: 100vh;
+  background-color: #a0090d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wolve .card {
+  width: 1000px;
+  height: 600px;
+  background-color: #543e75;
+  padding: 2rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media (max-width: 39.9375em) {
+  .wolve .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    width: 80%;
+  }
+}
+
+.wolve .card__text h1 {
+  font-family: "Frijole", cursive;
+  font-size: 5rem;
+  color: #e6c022;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 39.9375em) {
+  .wolve .card__text h1 {
+    font-size: 2rem;
+  }
+}
+
+.wolve .card__text h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #8eaac0;
+  font-family: "Trade Winds", cursive;
+}
+
+@media (max-width: 39.9375em) {
+  .wolve .card__text h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .wolve .card__image {
+    position: absolute;
+    left: 51.5%;
+    top: -10%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .wolve .card__image {
+    position: relative;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 64em) {
+  .wolve .card__image img {
+    width: 134%;
+    height: 110%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .wolve .card__image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
